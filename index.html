@@ -15,17 +15,7 @@
     rel="stylesheet">
 
   <!-- Customization of Tailwind -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-  </script>
+
   <style>
     body {
       font-family: "Poppins", sans-serif;
@@ -66,11 +56,13 @@
           </div>
           <div class="relative dropdown flex  mr-auto lg:hidden">
             <div tabindex="0" role="button" class="btn text-left">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
               </svg>
             </div>
-            <ul tabindex="0" class="absolute right-1 top-6 menu menu-sm dropdown-content bg-base-100 rounded-lg z-[1] mt-3 shadow">
+            <ul tabindex="0"
+              class="absolute right-1 top-6 menu menu-sm dropdown-content bg-base-100 rounded-lg z-[1] mt-3 shadow">
               <li><a>Home</a></li>
               <li>
                 <a>Shop</a>
@@ -170,8 +162,33 @@
 
 
   </header>
-  <main>
-    
+  <main class="container mx-auto">
+    <section class="mx-auto space-y-4 my-32 md:my-40">
+      <div class="flex flex-col items-center">
+        <h2 class="text-xl md:text-5xl font-semibold">Featured Bikes In This Year</h2>
+        <p class="text-sm font-medium md:font-semibold text-[#E76F51]">Best bike collection</p>
+        <hr class="#E76F51 border-[1] border-[#E76F51] w-12">
+        </div>
+        <!-- Card-container -->
+        <div class="grid grid-cols-1 md:gap-32 md:grid-cols-2 lg:grid-cols-3 place-items-center space-y-8">
+          <!-- card-1 -->
+          <div class="w-72 h-60 grayscale">
+            <figure>
+              <img src="images/others/feature-bike.png" alt="Bike">
+            </figure>
+          </div>
+          <div class="w-72 h-60">
+            <figure>
+              <img src="images/others/feature-bike.png" alt="Bike" />
+            </figure>
+          </div>
+          <div class="w-72 h-60 grayscale">
+            <figure>
+              <img src="images/others/feature-bike.png" alt="Bike" />
+            </figure>
+          </div>
+        </div>
+    </section>
   </main>
 </body>
 
